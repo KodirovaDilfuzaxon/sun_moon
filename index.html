@@ -22,21 +22,17 @@
     </div>
     <script type="text/javascript">
       let mode = 1; // 1 = light  0= dark
-      const button = document.getElementById("sunmoon")
+      const button = document.getElementById("sunmoon");
       button.onclick = () => {
         if (mode === 0) {
-            document.body.style.setProperty("--bg-2", "orange");
-            document.body.style.setProperty("--bg-1", "silver");
-            mode = 1
+          document.body.style.setProperty("--bg-2", "orange");
+          document.body.style.setProperty("--bg-1", "silver");
+          mode = 1;
+        } else {
+          document.body.style.setProperty("--bg-2", "blac");
+          document.body.style.setProperty("--bg-1", "navy");
+          mode = 0;
         }
-        else {
-            document.body.style.setProperty("--bg-2", "blac");
-            document.body.style.setProperty("--bg-1", "navy");  
-            mode = 0;
-        }
-            
-
-      
       };
     </script>
   </body>
