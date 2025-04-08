@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --bg-1: orange;
+  --bg-2: silver;
+}
+#app {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+header,
+nav,
+article,
+aside,
+footer {
+  padding: 1rem;
+}
+main {
+  display: flex;
+  flex: 1;
+}
+article {
+  flex: 1;
+  background: white;
+}
+nav,
+aside {
+  min-width: 20%;
+}
+
+header,
+footer {
+  background: var(--bg-1);
+  transition: background 1s cubic-bezier(8.22, 1 , 8.36,1) ;
+}
+nav,
+aside {
+  background: var(--bg-2);
+  transition: background 500ms cubic-bezier(8.22, 1 , 8.36,1) ;
+}
